@@ -1,0 +1,73 @@
+/* 29. 03. 2008 */
+
+# include <bits/stdc++.h>
+using namespace std;
+
+bool watbor = 0;
+
+typedef long long ll;
+typedef pair <int, int> pii;
+typedef pair <int, ll> pil;
+typedef pair <ll, int> pli;
+typedef pair <ll, ll> pll;
+typedef vector <int> vi;
+typedef vector <pii> vii;
+
+#define fi first
+#define se second
+#define pb push_back
+#define FORN(i, a, b) for(int i = a, _b = b; i < _b; i++)
+#define FOR(i, a, b) for(int i = a, _b = b; i <= _b; i++)
+#define FORD(i, a, b) for(int i = a, _b = b; i >= _b; i--)
+#define ALL(a) a.begin(), a.end()
+#define endl "\n"
+#define BIT(mask, i) ((mask >> (i)) & 1)
+#define MASK(a) (1LL << a)
+#define sz(A) (int)A.size()
+#define uni(V) sort(ALL(V)), V.resize(unique(ALL(V)) - V.begin())
+
+template <class T> bool maxi(T &a, const T b){if(a < b){a = b; return true;}return false;}
+template <class T> bool mini(T &a, const T b){if(a > b){a = b; return true;}return false;}
+
+const int N = 2e5 + 5, M = 1e3 + 5, LG = __lg(N) + 1, base = 311;
+const int oo = 2e9, sm = 1e9 + 7, mod1 = 1e9 + 7, mod2 = 1e9 + 3;
+const long long inf = 1e18;
+
+void init()
+{
+
+}
+
+namespace subtask_1
+{
+
+	void solve()
+	{
+
+	}
+}
+
+signed main()
+{
+    ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+
+    #define task ""
+    if(fopen(task".inp","r"))
+    {
+        freopen(task".inp","r",stdin);
+        freopen(task".out","w",stdout);
+    }
+
+    int tc; tc = 1;
+    if(watbor) cin >> tc;
+
+    while(tc--)
+    {
+        init();
+        return subtask_1::solve(), 0;
+    }
+
+    cerr << "\nTime : " << 0.001 * clock() << "s ";
+    return 0;       
+}
+/* Watbor */
