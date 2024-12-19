@@ -1,0 +1,66 @@
+/* 29. 03. 2008 */
+
+# include <bits/stdc++.h>
+using namespace std;
+
+bool watbor = 0;
+
+typedef long long ll;
+typedef pair <int, int> pii;
+typedef pair <int, ll> pil;
+typedef pair <ll, int> pli;
+typedef pair <ll, ll> pll;
+typedef vector <int> vi;
+typedef vector <pii> vii;
+
+#define fi first
+#define se second
+#define pb push_back
+#define FORN(i, a, b) for(int i = a, _b = b; i < _b; i++)
+#define FOR(i, a, b) for(int i = a, _b = b; i <= _b; i++)
+#define FORD(i, a, b) for(int i = a, _b = b; i >= _b; i--)
+#define ALL(a) a.begin(), a.end()
+#define endl "\n"
+#define BIT(mask, i) ((mask >> (i)) & 1)
+#define MASK(a) (1LL << a)
+#define sz(A) (int)A.size()
+#define uni(V) sort(ALL(V)), V.resize(unique(ALL(V)) - V.begin())
+
+template <class T> bool maxi(T &a, const T b){if(a < b){a = b; return true;}return false;}
+template <class T> bool mini(T &a, const T b){if(a > b){a = b; return true;}return false;}
+
+mt19937 rd(chrono::steady_clock::now().time_since_epoch().count());
+
+int Rand(int l,int r) 
+{
+	return l + rd()%(r-l+1); 
+}
+
+const string NAME = ""; 
+const int N = 1e5 + 5; 
+const int TEST = 100; 
+
+void create()
+{
+	ofstream inp((NAME + ".inp").c_str()); 
+
+	inp.close(); 
+}
+
+signed main()
+{	
+	srand(time(NULL)); 
+	FOR(test,1,TEST)
+	{
+		create(); 
+		system((NAME + ".exe").c_str()); 
+		system((NAME + "_trau.exe").c_str()); 
+		if(system(("fc " + NAME + ".out " + NAME + ".ans").c_str()) != 0)
+		{
+			cout << "WRONG"; 
+			return 0; 
+		}
+	}
+	return 0; 
+}
+/* Watbor */
