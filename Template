@@ -33,27 +33,19 @@ const int N = 2e5 + 5, M = 1e3 + 5, LG = __lg(N) + 1, base = 311;
 const int oo = 2e9, sm = 1e9 + 7, mod1 = 1e9 + 7, mod2 = 1e9 + 3;
 const long long inf = 1e18;
 
-void init()
-{
+void init(){
 
 }
 
-namespace subtask_1
-{
+void solve(){
 
-	void solve()
-	{
-
-	}
 }
 
-signed main()
-{
+signed main(){
     ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 
     #define task ""
-    if(fopen(task".inp","r"))
-    {
+    if(fopen(task".inp","r")){
         freopen(task".inp","r",stdin);
         freopen(task".out","w",stdout);
     }
@@ -61,10 +53,9 @@ signed main()
     int tc; tc = 1;
     if(watbor) cin >> tc;
 
-    while(tc--)
-    {
+    while(tc--){
         init();
-        return subtask_1::solve(), 0;
+        solve();
     }
 
     cerr << "\nTime : " << 0.001 * clock() << "s ";
