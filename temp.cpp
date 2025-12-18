@@ -455,6 +455,9 @@ int gcd(int a, int b, int& x, int& y) {
     return d;
 }
 
+// x = x0 + k * b / g
+// y = y0 - k * a / g
+
 bool find_any_solution(int a, int b, int c, int &x0, int &y0, int &g)  {
     g = gcd(abs(a), abs(b), x0, y0);
     if(c % g) return 0;
